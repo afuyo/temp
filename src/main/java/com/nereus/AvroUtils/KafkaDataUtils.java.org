@@ -1,0 +1,97 @@
+package com.nereus.AvroUtils;
+
+import com.attunity.avro.decoder.AttunityDataMessage;
+import com.attunity.avro.decoder.AttunityDecoderException;
+import com.attunity.avro.decoder.AttunityMessageDecoder;
+import com.nereus.AvroUtils.ConfluentBasedSchemaRegistry;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Properties;
+
+public class KafkaDataUtils {
+	static AttunityMessageDecoder messageDecoder;
+	static ConfluentBasedSchemaRegistry schemaLocator;
+
+	static {
+		//schemaLocator = new ConfluentBasedSchemaRegistry("/home/statarm/playground/Code/tomekl007-packt_algo-44b37f423231/files", new AttunityMessageDecoder());
+		schemaLocator = new ConfluentBasedSchemaRegistry("C:\\githubrepos\\Nereus\\files", new AttunityMessageDecoder());
+		messageDecoder = new AttunityMessageDecoder(schemaLocator);
+	}
+
+	/**
+	 * @param consumerGroupId
+	 * @param sourceTopics
+	 * @param targetTotalCount
+	 * @return
+	 */
+	public static HashMap<String, ArrayList<String>> fetchAllDataFromKafkaTopics(int consumerGroupId,
+			String sourceTopics, long targetTotalCount) {
+		Properties consumerProperties = KafkaUtilities.getKafkaConsumerPropertiesByte(consumerGroupId);
+		KafkaConsumer<String, byte[]> consumer = new KafkaConsumer<>(consumerProperties);
+		String[] topicarray = sourceTopics.split(",");
+		consumer.subscribe(Arrays.asList(topicarray));
+
+		long recordCount = 0;
+		int emptyChk = 0;
+		HashMap<String, ArrayList<String>> finalMap = new HashMap<String, ArrayList<String>>();
+		ArrayList<String> dataList = new ArrayList<>();
+		ArrayList<String> schemaList = new ArrayList<>();
+		while (true) {
+			ConsumerRecords<String, byte[]> records = consumer.poll(100);
+			recordCount = recordCount + records.count();
+			for (ConsumerRecord<String, byte[]> record : records) {
+				AttunityDataMessage message = null;
+				try {
+					message = (AttunityDataMessage) messageDecoder.decode(record.value());
+				} catch (AttunityDecoderException e) {
+					System.out.println("getErrorCode------" + e.getErrorCode());
+					e.printStackTrace();
+				}
+				JSONObject dataMessage = new JSONObject(message.getRawMessage().toString());
+				String finalObj = dataMessage.getJSONObject("data").toString();
+				//String schemaObj = message.getRawMessage().getSchema().toString();
+				String schemaStr = message.getRawMessage().getSchema().toString();
+				String schemaJSon = new JSONObject(schemaStr).getJSONArray("fields").getJSONObject(0)
+						.getJSONObject("type").toString();
+
+				if (finalMap.containsKey("DataList")) {
+					ArrayList<String> existingDataList = finalMap.get("DataList");
+					existingDataList.add(finalObj);
+					finalMap.put("DataList", existingDataList);
+				} else {
+					dataList.add(finalObj);
+					finalMap.put("DataList", dataList);
+				}
+
+				if (!finalMap.containsKey("SchemaList")) {
+					schemaList.add(schemaJSon);
+					finalMap.put("SchemaList", schemaList);
+				}
+
+			}
+
+			if (recordCount >= targetTotalCount) {
+				break;
+			}
+
+			if (records.count() == 0) {
+				emptyChk++;
+				if (emptyChk == 3) {
+					break;
+				}
+			}
+		}
+		consumer.close();
+		return finalMap;
+	}
+
+//	public static void main(String[] args) {
+//		System.out.println(fetchAllDataFromKafkaTopics(117, "STATPEJ.POC_CLAIM", 5000));
+//	}
+}

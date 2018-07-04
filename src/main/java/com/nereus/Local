@@ -1,0 +1,1102 @@
+"C:\Program Files\Java\jdk1.8.0_162\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.1\lib\idea_rt.jar=62307:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_162\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\rt.jar;C:\githubrepos\Nereus\target\classes;C:\java_devenv\m3repo\net\agkn\hll\1.6.0\hll-1.6.0.jar;C:\java_devenv\m3repo\it\unimi\dsi\fastutil\6.5.11\fastutil-6.5.11.jar;C:\java_devenv\m3repo\com\google\guava\guava\23.0\guava-23.0.jar;C:\java_devenv\m3repo\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\java_devenv\m3repo\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\java_devenv\m3repo\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\java_devenv\m3repo\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\java_devenv\m3repo\com\fasterxml\jackson\core\jackson-databind\2.9.4\jackson-databind-2.9.4.jar;C:\java_devenv\m3repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\java_devenv\m3repo\com\fasterxml\jackson\core\jackson-core\2.9.4\jackson-core-2.9.4.jar;C:\java_devenv\m3repo\com\fasterxml\jackson\module\jackson-module-jsonSchema\2.9.4\jackson-module-jsonSchema-2.9.4.jar;C:\java_devenv\m3repo\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\java_devenv\m3repo\org\json\json\20180130\json-20180130.jar;C:\java_devenv\m3repo\org\apache\commons\commons-collections4\4.0\commons-collections4-4.0.jar;C:\java_devenv\m3repo\org\javatuples\javatuples\1.2\javatuples-1.2.jar;C:\java_devenv\m3repo\org\neo4j\driver\neo4j-java-driver\1.1.1\neo4j-java-driver-1.1.1.jar;C:\java_devenv\m3repo\org\apache\avro\avro\1.7.7\avro-1.7.7.jar;C:\java_devenv\m3repo\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\java_devenv\m3repo\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\java_devenv\m3repo\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\java_devenv\m3repo\org\xerial\snappy\snappy-java\1.0.5\snappy-java-1.0.5.jar;C:\java_devenv\m3repo\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\java_devenv\m3repo\org\tukaani\xz\1.0\xz-1.0.jar;C:\java_devenv\m3repo\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar;C:\java_devenv\m3repo\com\attunity\attunity-decoder\0.0.1-SNAPSHOT\attunity-decoder-0.0.1-20180312.134938-1.jar;C:\java_devenv\m3repo\com\tryg\common-framework\0.0.1-SNAPSHOT\common-framework-0.0.1-20180312.141858-1.jar;C:\java_devenv\m3repo\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar" com.nereus.MetadataJSON1036Test512A3Local
+Customer Lines 5003
+Adresss [address]
+Adresss [addresstime]
+Adresss [address, addresstime]
+Adresss [customer]
+Adresss [address, customer]
+Adresss [addresstime, customer]
+Adresss [address, addresstime, customer]
+KeySet [{[]=net.agkn.hll.HLL@4d591d15, [customertime]=net.agkn.hll.HLL@65ae6ba4, [customertime, customer]=net.agkn.hll.HLL@48cf768c, [customertime, policy]=net.agkn.hll.HLL@59f95c5d, [customertime, customer, policy]=net.agkn.hll.HLL@5ccd43c2, [customer]=net.agkn.hll.HLL@4aa8f0b4, [policy]=net.agkn.hll.HLL@7960847b, [customer, policy]=net.agkn.hll.HLL@6a6824be}]
+[customertime]Proper Subset [policystarttime]
+[customertime, policy]Proper Subset [policystarttime, policy]
+-------------------
+NodeName A Customer
+NodeNamed B Policy
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+-------------------
+NodeName A Customer
+NodeNamed B Claim
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+[customertime]Proper Subset [addresstime]
+Nodename Address is subset of Customer which is superset
+[customertime, customer]Proper Subset [addresstime, customer]
+Nodename Address is subset of Customer which is superset
+-------------------
+NodeName A Customer
+NodeNamed B Address
+[customer]isProper Subset [customer]
+[customer]Proper Subset [customer]
+KeySet [{[]=net.agkn.hll.HLL@4f47d241, [policystarttime, policyendtime]=net.agkn.hll.HLL@4c3e4790, [pvar1, policy]=net.agkn.hll.HLL@38cccef, [pvar0, policy]=net.agkn.hll.HLL@5679c6c6, [policystarttime, policyendtime, policy]=net.agkn.hll.HLL@27ddd392, [policystarttime, pvar0, pvar1, policyendtime]=net.agkn.hll.HLL@19e1023e, [pvar0, pvar1, policyendtime, policy]=net.agkn.hll.HLL@7cef4e59, [pvar0, pvar1, policy]=net.agkn.hll.HLL@64b8f8f4, [policystarttime, pvar1, policyendtime]=net.agkn.hll.HLL@2db0f6b2, [policystarttime, pvar0, policyendtime]=net.agkn.hll.HLL@3cd1f1c8, [policy]=net.agkn.hll.HLL@3a4afd8d, [policyendtime, policy]=net.agkn.hll.HLL@1996cd68, [policystarttime]=net.agkn.hll.HLL@3339ad8e, [pvar1, policyendtime, policy]=net.agkn.hll.HLL@555590, [policystarttime, pvar0, pvar1]=net.agkn.hll.HLL@6d1e7682, [policystarttime, policy]=net.agkn.hll.HLL@424c0bc4, [policystarttime, pvar0, pvar1, policy]=net.agkn.hll.HLL@3c679bde, [pvar0, policyendtime, policy]=net.agkn.hll.HLL@16b4a017, [pvar1, policyendtime]=net.agkn.hll.HLL@8807e25, [policyendtime]=net.agkn.hll.HLL@2a3046da, [policystarttime, pvar1]=net.agkn.hll.HLL@2a098129, [policystarttime, pvar1, policy]=net.agkn.hll.HLL@198e2867, [policystarttime, pvar0]=net.agkn.hll.HLL@12f40c25, [policystarttime, pvar0, policy]=net.agkn.hll.HLL@3ada9e37, [pvar0, pvar1]=net.agkn.hll.HLL@5cbc508c, [pvar0, policyendtime]=net.agkn.hll.HLL@3419866c, [pvar0, pvar1, policyendtime]=net.agkn.hll.HLL@63e31ee, [pvar0]=net.agkn.hll.HLL@68fb2c38, [pvar1]=net.agkn.hll.HLL@567d299b, [policystarttime, pvar0, policyendtime, policy]=net.agkn.hll.HLL@2eafffde, [policystarttime, pvar0, pvar1, policyendtime, policy]=net.agkn.hll.HLL@59690aa4, [policystarttime, pvar1, policyendtime, policy]=net.agkn.hll.HLL@6842775d}]
+-------------------
+NodeName A Policy
+NodeNamed B Customer
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+[policystarttime]Proper Subset [customertime]
+Nodename Customer is subset of Policy which is superset
+[policystarttime, policy]Proper Subset [customertime, policy]
+Nodename Customer is subset of Policy which is superset
+-------------------
+NodeName A Policy
+NodeNamed B Claim
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+-------------------
+NodeName A Policy
+NodeNamed B Claim
+[pvar0]isProper Subset [claimcounter]
+[pvar0]Proper Subset [claimcounter]
+-------------------
+NodeName A Policy
+NodeNamed B Claim
+[pvar1]isProper Subset [claimcounter]
+[pvar1]Proper Subset [claimcounter]
+-------------------
+NodeName A Policy
+NodeNamed B Payment
+[pvar0, pvar1]isProper Subset [addresstime, claimcounter]
+[pvar0, pvar1]Proper Subset [addresstime, claimcounter]
+-------------------
+NodeName A Policy
+NodeNamed B Payment
+[pvar0, pvar1]isProper Subset [claimcounter, customer]
+[pvar0, pvar1]Proper Subset [claimcounter, customer]
+-------------------
+NodeName A Policy
+NodeNamed B Payment
+[pvar0, pvar1]isProper Subset [address, claimcounter]
+[pvar0, pvar1]Proper Subset [address, claimcounter]
+-------------------
+NodeName A Policy
+NodeNamed B Payment
+[pvar0]isProper Subset [claimcounter]
+[pvar0]Proper Subset [claimcounter]
+-------------------
+NodeName A Policy
+NodeNamed B Payment
+[pvar1]isProper Subset [claimcounter]
+[pvar1]Proper Subset [claimcounter]
+[policystarttime]Proper Subset [addresstime]
+Nodename Address is subset of Policy which is superset
+KeySet [{[]=net.agkn.hll.HLL@574caa3f, [claimreporttime, claimtime, policy]=net.agkn.hll.HLL@64cee07, [claimreporttime]=net.agkn.hll.HLL@1761e840, [claimreporttime, policy]=net.agkn.hll.HLL@6c629d6e, [claimreporttime, claimtime]=net.agkn.hll.HLL@5ecddf8f, [claimnumber, claimreporttime, policy]=net.agkn.hll.HLL@3f102e87, [claimcounter, policy]=net.agkn.hll.HLL@27abe2cd, [claimcounter]=net.agkn.hll.HLL@5f5a92bb, [claimnumber, claimreporttime]=net.agkn.hll.HLL@6fdb1f78, [claimnumber]=net.agkn.hll.HLL@51016012, [claimnumber, claimtime, policy]=net.agkn.hll.HLL@29444d75, [claimtime]=net.agkn.hll.HLL@2280cdac, [claimreporttime, claimcounter, policy]=net.agkn.hll.HLL@1517365b, [claimreporttime, claimcounter, claimtime]=net.agkn.hll.HLL@4fccd51b, [claimnumber, claimreporttime, claimcounter]=net.agkn.hll.HLL@44e81672, [policy]=net.agkn.hll.HLL@60215eee, [claimnumber, claimreporttime, claimcounter, claimtime, policy]=net.agkn.hll.HLL@4ca8195f, [claimnumber, claimcounter]=net.agkn.hll.HLL@65e579dc, [claimnumber, claimcounter, claimtime, policy]=net.agkn.hll.HLL@61baa894, [claimnumber, claimtime]=net.agkn.hll.HLL@b065c63, [claimcounter, claimtime]=net.agkn.hll.HLL@768debd, [claimnumber, claimreporttime, claimtime, policy]=net.agkn.hll.HLL@490d6c15, [claimnumber, claimreporttime, claimtime]=net.agkn.hll.HLL@7d4793a8, [claimreporttime, claimcounter, claimtime, policy]=net.agkn.hll.HLL@449b2d27, [claimnumber, policy]=net.agkn.hll.HLL@5479e3f, [claimcounter, claimtime, policy]=net.agkn.hll.HLL@27082746, [claimreporttime, claimcounter]=net.agkn.hll.HLL@66133adc, [claimnumber, claimcounter, policy]=net.agkn.hll.HLL@7bfcd12c, [claimtime, policy]=net.agkn.hll.HLL@42f30e0a, [claimnumber, claimcounter, claimtime]=net.agkn.hll.HLL@24273305, [claimnumber, claimreporttime, claimcounter, claimtime]=net.agkn.hll.HLL@5b1d2887, [claimnumber, claimreporttime, claimcounter, policy]=net.agkn.hll.HLL@46f5f779}]
+-------------------
+NodeName A Claim
+NodeNamed B Customer
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+-------------------
+NodeName A Claim
+NodeNamed B Policy
+[claimcounter]isProper Subset [pvar0]
+[claimcounter]Proper Subset [pvar0]
+-------------------
+NodeName A Claim
+NodeNamed B Policy
+[claimcounter]isProper Subset [pvar1]
+[claimcounter]Proper Subset [pvar1]
+-------------------
+NodeName A Claim
+NodeNamed B Policy
+[policy]isProper Subset [policy]
+[policy]Proper Subset [policy]
+-------------------
+NodeName A Claim
+NodeNamed B Payment
+[claimcounter]isProper Subset [claimcounter]
+[claimcounter]Proper Subset [claimcounter]
+[claimnumber]Proper Subset [claimnumber]
+[claimnumber, claimcounter]Proper Subset [claimnumber, claimcounter]
+KeySet [{[]=net.agkn.hll.HLL@1c2c22f3, [claimnumber, address, claimcounter]=net.agkn.hll.HLL@18e8568, [addresstime, claimcounter]=net.agkn.hll.HLL@33e5ccce, [paytime, payment, customer]=net.agkn.hll.HLL@5a42bbf4, [claimnumber, address, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@270421f5, [addresstime, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@52d455b8, [claimnumber, addresstime, customer]=net.agkn.hll.HLL@4f4a7090, [address, payment, customer]=net.agkn.hll.HLL@18ef96, [addresstime, paytime, payment]=net.agkn.hll.HLL@6956de9, [address, addresstime, payment, claimcounter, customer]=net.agkn.hll.HLL@769c9116, [address, addresstime, payment]=net.agkn.hll.HLL@6aceb1a5, [paytime, customer]=net.agkn.hll.HLL@2d6d8735, [addresstime, paytime, claimcounter, customer]=net.agkn.hll.HLL@ba4d54, [addresstime, payment, claimcounter]=net.agkn.hll.HLL@12bc6874, [payment]=net.agkn.hll.HLL@de0a01f, [claimnumber, address, paytime, payment]=net.agkn.hll.HLL@4c75cab9, [claimnumber, paytime, payment, claimcounter]=net.agkn.hll.HLL@1ef7fe8e, [claimnumber, address, addresstime, paytime, payment, claimcounter]=net.agkn.hll.HLL@6f79caec, [addresstime, paytime]=net.agkn.hll.HLL@67117f44, [claimnumber, address, addresstime, paytime, claimcounter]=net.agkn.hll.HLL@5d3411d, [claimnumber, address, paytime, customer]=net.agkn.hll.HLL@2471cca7, [claimnumber, address, paytime]=net.agkn.hll.HLL@5fe5c6f, [addresstime, paytime, customer]=net.agkn.hll.HLL@6979e8cb, [claimcounter, customer]=net.agkn.hll.HLL@763d9750, [addresstime]=net.agkn.hll.HLL@5c0369c4, [address, addresstime]=net.agkn.hll.HLL@2be94b0f, [address, addresstime, customer]=net.agkn.hll.HLL@d70c109, [claimnumber, addresstime, payment, claimcounter, customer]=net.agkn.hll.HLL@17ed40e0, [claimnumber, payment, customer]=net.agkn.hll.HLL@50675690, [claimnumber, address, addresstime, paytime, claimcounter, customer]=net.agkn.hll.HLL@31b7dea0, [paytime, payment]=net.agkn.hll.HLL@3ac42916, [addresstime, paytime, payment, claimcounter]=net.agkn.hll.HLL@47d384ee, [address, payment]=net.agkn.hll.HLL@2d6a9952, [addresstime, paytime, payment, customer]=net.agkn.hll.HLL@22a71081, [claimnumber, addresstime]=net.agkn.hll.HLL@3930015a, [claimcounter]=net.agkn.hll.HLL@629f0666, [claimnumber, address, addresstime, payment, claimcounter]=net.agkn.hll.HLL@1bc6a36e, [claimnumber, address, claimcounter, customer]=net.agkn.hll.HLL@1ff8b8f, [address, addresstime, payment, claimcounter]=net.agkn.hll.HLL@387c703b, [claimnumber, paytime, payment]=net.agkn.hll.HLL@224aed64, [claimnumber, customer]=net.agkn.hll.HLL@c39f790, [claimnumber, address, addresstime, paytime, payment]=net.agkn.hll.HLL@71e7a66b, [claimnumber, addresstime, paytime, payment, claimcounter]=net.agkn.hll.HLL@2ac1fdc4, [address, addresstime, payment, customer]=net.agkn.hll.HLL@5f150435, [addresstime, paytime, claimcounter]=net.agkn.hll.HLL@1c53fd30, [claimnumber, addresstime, claimcounter, customer]=net.agkn.hll.HLL@50cbc42f, [claimnumber, addresstime, payment, customer]=net.agkn.hll.HLL@75412c2f, [claimnumber, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@282ba1e, [payment, claimcounter]=net.agkn.hll.HLL@13b6d03, [address]=net.agkn.hll.HLL@f5f2bb7, [address, paytime, claimcounter, customer]=net.agkn.hll.HLL@73035e27, [claimnumber, addresstime, payment]=net.agkn.hll.HLL@64c64813, [claimnumber, address, addresstime, paytime, customer]=net.agkn.hll.HLL@3ecf72fd, [address, addresstime, claimcounter, customer]=net.agkn.hll.HLL@483bf400, [paytime]=net.agkn.hll.HLL@21a06946, [claimnumber, address, payment, claimcounter]=net.agkn.hll.HLL@77f03bb1, [claimnumber, address, addresstime, paytime]=net.agkn.hll.HLL@326de728, [address, paytime, claimcounter]=net.agkn.hll.HLL@25618e91, [address, customer]=net.agkn.hll.HLL@7a92922, [claimnumber, address, payment, claimcounter, customer]=net.agkn.hll.HLL@71f2a7d5, [address, addresstime, claimcounter]=net.agkn.hll.HLL@2cfb4a64, [payment, claimcounter, customer]=net.agkn.hll.HLL@5474c6c, [address, paytime, payment, claimcounter]=net.agkn.hll.HLL@4b6995df, [address, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@2fc14f68, [claimnumber, paytime, claimcounter, customer]=net.agkn.hll.HLL@591f989e, [claimnumber, paytime, claimcounter]=net.agkn.hll.HLL@66048bfd, [claimnumber, addresstime, paytime, claimcounter, customer]=net.agkn.hll.HLL@61443d8f, [claimnumber, address, addresstime, payment]=net.agkn.hll.HLL@445b84c0, [address, payment, claimcounter]=net.agkn.hll.HLL@61a52fbd, [address, addresstime, paytime]=net.agkn.hll.HLL@233c0b17, [addresstime, customer]=net.agkn.hll.HLL@63d4e2ba, [claimnumber, addresstime, paytime, payment]=net.agkn.hll.HLL@7bb11784, [claimnumber, address, addresstime, claimcounter, customer]=net.agkn.hll.HLL@33a10788, [claimnumber, paytime, customer]=net.agkn.hll.HLL@7006c658, [addresstime, payment, customer]=net.agkn.hll.HLL@34033bd0, [claimnumber, address, addresstime, paytime, payment, customer]=net.agkn.hll.HLL@47fd17e3, [address, addresstime, paytime, claimcounter, customer]=net.agkn.hll.HLL@7cdbc5d3, [claimnumber]=net.agkn.hll.HLL@3aa9e816, [address, claimcounter]=net.agkn.hll.HLL@17d99928, [claimnumber, addresstime, paytime]=net.agkn.hll.HLL@3834d63f, [claimnumber, address, customer]=net.agkn.hll.HLL@1ae369b7, [claimnumber, address, addresstime]=net.agkn.hll.HLL@6fffcba5, [claimnumber, addresstime, claimcounter]=net.agkn.hll.HLL@34340fab, [paytime, claimcounter]=net.agkn.hll.HLL@2aafb23c, [address, paytime, customer]=net.agkn.hll.HLL@2b80d80f, [address, addresstime, paytime, payment, claimcounter]=net.agkn.hll.HLL@3ab39c39, [claimnumber, addresstime, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@2eee9593, [claimnumber, paytime, payment, customer]=net.agkn.hll.HLL@7907ec20, [claimnumber, address, addresstime, payment, claimcounter, customer]=net.agkn.hll.HLL@546a03af, [claimnumber, address, payment]=net.agkn.hll.HLL@721e0f4f, [claimnumber, address, payment, customer]=net.agkn.hll.HLL@28864e92, [claimnumber, addresstime, payment, claimcounter]=net.agkn.hll.HLL@6ea6d14e, [address, addresstime, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@6ad5c04e, [claimnumber, payment]=net.agkn.hll.HLL@6833ce2c, [address, paytime, payment, customer]=net.agkn.hll.HLL@725bef66, [address, paytime, payment]=net.agkn.hll.HLL@2aaf7cc2, [claimnumber, address, paytime, payment, claimcounter]=net.agkn.hll.HLL@6e3c1e69, [address, addresstime, paytime, customer]=net.agkn.hll.HLL@1888ff2c, [claimnumber, address, addresstime, claimcounter]=net.agkn.hll.HLL@35851384, [claimnumber, addresstime, paytime, claimcounter]=net.agkn.hll.HLL@649d209a, [claimnumber, paytime]=net.agkn.hll.HLL@6adca536, [address, addresstime, paytime, claimcounter]=net.agkn.hll.HLL@357246de, [addresstime, payment]=net.agkn.hll.HLL@28f67ac7, [address, claimcounter, customer]=net.agkn.hll.HLL@256216b3, [claimnumber, address]=net.agkn.hll.HLL@2a18f23c, [claimnumber, addresstime, paytime, customer]=net.agkn.hll.HLL@d7b1517, [payment, customer]=net.agkn.hll.HLL@16c0663d, [claimnumber, address, paytime, payment, customer]=net.agkn.hll.HLL@23223dd8, [addresstime, payment, claimcounter, customer]=net.agkn.hll.HLL@4ec6a292, [address, paytime]=net.agkn.hll.HLL@1b40d5f0, [claimnumber, address, addresstime, customer]=net.agkn.hll.HLL@ea4a92b, [claimnumber, address, addresstime, paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@3c5a99da, [paytime, claimcounter, customer]=net.agkn.hll.HLL@47f37ef1, [claimnumber, claimcounter, customer]=net.agkn.hll.HLL@5a01ccaa, [claimnumber, claimcounter]=net.agkn.hll.HLL@71c7db30, [address, addresstime, paytime, payment, customer]=net.agkn.hll.HLL@19bb089b, [paytime, payment, claimcounter, customer]=net.agkn.hll.HLL@4563e9ab, [claimnumber, addresstime, paytime, payment, customer]=net.agkn.hll.HLL@11531931, [claimnumber, address, paytime, claimcounter]=net.agkn.hll.HLL@5e025e70, [claimnumber, payment, claimcounter]=net.agkn.hll.HLL@1fbc7afb, [claimnumber, address, paytime, claimcounter, customer]=net.agkn.hll.HLL@45c8e616, [claimnumber, payment, claimcounter, customer]=net.agkn.hll.HLL@4cdbe50f, [address, payment, claimcounter, customer]=net.agkn.hll.HLL@66d33a, [address, addresstime, paytime, payment]=net.agkn.hll.HLL@7cf10a6f, [claimnumber, address, addresstime, payment, customer]=net.agkn.hll.HLL@7e0babb1, [addresstime, claimcounter, customer]=net.agkn.hll.HLL@6debcae2, [paytime, payment, claimcounter]=net.agkn.hll.HLL@5ba23b66, [customer]=net.agkn.hll.HLL@2ff4f00f}]
+-------------------
+NodeName A Payment
+NodeNamed B Policy
+[addresstime, claimcounter]isProper Subset [pvar0, pvar1]
+[addresstime, claimcounter]Proper Subset [pvar0, pvar1]
+-------------------
+NodeName A Payment
+NodeNamed B Policy
+[claimcounter, customer]isProper Subset [pvar0, pvar1]
+[claimcounter, customer]Proper Subset [pvar0, pvar1]
+-------------------
+NodeName A Payment
+NodeNamed B Policy
+[claimcounter]isProper Subset [pvar0]
+[claimcounter]Proper Subset [pvar0]
+-------------------
+NodeName A Payment
+NodeNamed B Policy
+[claimcounter]isProper Subset [pvar1]
+[claimcounter]Proper Subset [pvar1]
+-------------------
+NodeName A Payment
+NodeNamed B Policy
+[address, claimcounter]isProper Subset [pvar0, pvar1]
+[address, claimcounter]Proper Subset [pvar0, pvar1]
+-------------------
+NodeName A Payment
+NodeNamed B Claim
+[claimcounter]isProper Subset [claimcounter]
+[claimcounter]Proper Subset [claimcounter]
+-------------------
+NodeName A Payment
+NodeNamed B Claim
+[claimnumber]isProper Subset [claimnumber]
+[claimnumber]Proper Subset [claimnumber]
+-------------------
+NodeName A Payment
+NodeNamed B Claim
+[claimnumber, claimcounter]isProper Subset [claimnumber, claimcounter]
+[claimnumber, claimcounter]Proper Subset [claimnumber, claimcounter]
+KeySet [{[]=net.agkn.hll.HLL@75bd9247, [address]=net.agkn.hll.HLL@7d417077, [addresstime]=net.agkn.hll.HLL@7dc36524, [addresstime, customer]=net.agkn.hll.HLL@35bbe5e8, [address, addresstime]=net.agkn.hll.HLL@2c8d66b2, [address, customer]=net.agkn.hll.HLL@5a39699c, [address, addresstime, customer]=net.agkn.hll.HLL@3cb5cdba, [customer]=net.agkn.hll.HLL@56cbfb61}]
+[addresstime]Proper Subset [customertime]
+Nodename Customer is subset of Address which is superset
+[addresstime, customer]Proper Subset [customertime, customer]
+Nodename Customer is subset of Address which is superset
+-------------------
+NodeName A Address
+NodeNamed B Customer
+[customer]isProper Subset [customer]
+[customer]Proper Subset [customer]
+[addresstime]Proper Subset [policystarttime]
+getJoininTuple2 left and rightCustomer Policy
+*************JOIN on superset -subset  relation
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+LeftNode Customer
+SEX Customer
+Sextet get values(3)Policy
+Right Policy
+JoinTriplet {}
+getJoininTuple2 left and rightCustomer Address
+Claim
+###########################
+Create new leftname Payment1
+checkingMatchProperSubset Payment rname Claim
+getJoininTuple2 left and rightAddress Customer
+getJoininTuple2 left and rightAddress Policy
+Adding nodes
+Adding newly joined nodes [CustomerAndPolicy]
+Adding regrouped nodes [Payment1]
+'''''''''''***************** Metadata 1 for Claim
+Identified by
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+ProperSubset for Claim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Triplent for  Claim
+Joins for Claim
+'''''''''''***************** Metadata 1 for Customer
+Identified by
+[customertime]
+[customertime, policy]
+[customertime]
+[customertime, customer]
+Superset for Customer
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+Subset for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+ProperSubset for Customer
+[Customer, [policy], 2998, Policy, [policy], 2998]
+[Customer, [policy], 2998, Claim, [policy], 1542]
+[Customer, [customer], 2984, Address, [customer], 2984]
+Septet for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+Triplent for  Customer
+[Customer, Policy, false]
+Joins for Customer
+'''''''''''***************** Metadata 1 for Payment
+ProperSubset for Payment
+[Payment, [addresstime, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter, customer], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Policy, [pvar0], 3]
+[Payment, [claimcounter], 14, Policy, [pvar1], 8]
+[Payment, [address, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Claim, [claimcounter], 18]
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+[Payment, [claimnumber, claimcounter], 1665, Claim, [claimnumber, claimcounter], 3766]
+Septet for Payment
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 1 for Policy
+Identified by
+[policystarttime]
+[policystarttime, policy]
+[policystarttime]
+Superset for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for Policy
+[Policy, [policy], 2998, Customer, [policy], 2998]
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+Triplent for  Policy
+[Policy, Customer, false]
+Joins for Policy
+'''''''''''***************** Metadata 1 for Address
+Identified by
+Regroup2 contians multiple values
+[addresstime]
+[addresstime, customer]
+[addresstime]
+Superset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+Subset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+ProperSubset for Address
+[Address, [customer], 2984, Customer, [customer], 2984]
+Triplent for  Address
+Joins for Address
+'''''''''''***************** Metadata 1 for CustomerAndPolicy
+Identified by
+[policystarttime]
+Superset for CustomerAndPolicy
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for CustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  CustomerAndPolicy
+Joins for CustomerAndPolicy
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 1 for Payment1
+Identified by
+[claimnumber]
+Subset for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment1
+[Payment, Claim, true]
+Joins for Payment1
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+getJoininTuple2 left and rightCustomer Policy
+getJoininTuple2 left and rightCustomer Address
+getJoininTuple2 left and rightAddress Customer
+getJoininTuple2 left and rightAddress Policy
+getJoininTuple2 left and rightAddress CustomerAndPolicy
+*************JOIN on superset -subset  relation
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+LeftNode Address
+SEX Address
+Sextet get values(3)Policy
+Right CustomerAndPolicy
+JoinTriplet {Policy=[Policy, Customer, false], Payment=[Payment, Claim, true], Customer=[Customer, Policy, false], Payment1=[Payment, Claim, true]}
+getJoininTuple2 left and rightPayment1 Claim
+*************JOIN on superset -subset  relation
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+LeftNode Payment1
+SEX Payment
+Sextet get values(3)Claim
+Right Claim
+JoinTriplet {Policy=[Policy, Customer, false], Payment=[Payment, Claim, true], Address=[Address, CustomerAndPolicy, false], Customer=[Customer, Policy, false], Payment1=[Payment, Claim, true], CustomerAndPolicy=[CustomerAndPolicy, Address, false]}
+Adding nodes
+Adding newly joined nodes [AddressAndCustomerAndPolicy, Payment1AndClaim]
+'''''''''''***************** Metadata 2 for Claim
+Identified by
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+ProperSubset for Claim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 2 for Customer
+Identified by
+[customertime]
+[customertime, policy]
+[customertime]
+[customertime, customer]
+Superset for Customer
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+Subset for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+ProperSubset for Customer
+[Customer, [policy], 2998, Policy, [policy], 2998]
+[Customer, [policy], 2998, Claim, [policy], 1542]
+[Customer, [customer], 2984, Address, [customer], 2984]
+Septet for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+Triplent for  Customer
+[Customer, Policy, false]
+Joins for Customer
+'''''''''''***************** Metadata 2 for Payment
+ProperSubset for Payment
+[Payment, [addresstime, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter, customer], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Policy, [pvar0], 3]
+[Payment, [claimcounter], 14, Policy, [pvar1], 8]
+[Payment, [address, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Claim, [claimcounter], 18]
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+[Payment, [claimnumber, claimcounter], 1665, Claim, [claimnumber, claimcounter], 3766]
+Septet for Payment
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 2 for Policy
+Identified by
+[policystarttime]
+[policystarttime, policy]
+[policystarttime]
+Superset for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for Policy
+[Policy, [policy], 2998, Customer, [policy], 2998]
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+Triplent for  Policy
+[Policy, Customer, false]
+Joins for Policy
+'''''''''''***************** Metadata 2 for Address
+Identified by
+[addresstime]
+[addresstime, customer]
+[addresstime]
+Superset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+Subset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+ProperSubset for Address
+[Address, [customer], 2984, Customer, [customer], 2984]
+Septet for Address
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+Triplent for  Address
+[Address, CustomerAndPolicy, false]
+Joins for Address
+'''''''''''***************** Metadata 2 for CustomerAndPolicy
+Identified by
+[policystarttime]
+Superset for CustomerAndPolicy
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for CustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  CustomerAndPolicy
+[CustomerAndPolicy, Address, false]
+Joins for CustomerAndPolicy
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 2 for Payment1
+Identified by
+[claimnumber]
+Subset for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Septet for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 2 for AddressAndCustomerAndPolicy
+Identified by
+[policystarttime]
+ProperSubset for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  AddressAndCustomerAndPolicy
+Joins for AddressAndCustomerAndPolicy
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 2 for Payment1AndClaim
+Identified by
+[claimnumber]
+ProperSubset for Payment1AndClaim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Triplent for  Payment1AndClaim
+Joins for Payment1AndClaim
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+getJoininTuple2 left and rightCustomer Policy
+getJoininTuple2 left and rightCustomer Address
+getJoininTuple2 left and rightAddress Customer
+getJoininTuple2 left and rightAddress Policy
+getJoininTuple2 left and rightAddress CustomerAndPolicy
+getJoininTuple2 left and rightPayment1 Claim
+AddressAndCustomerAndPolicy
+###########################
+Create new leftname Payment1AndClaim1
+###########################
+Create new rname AddressAndCustomerAndPolicy1
+checkingMatchProperSubset Payment1AndClaim rname AddressAndCustomerAndPolicy
+Adding nodes
+Adding regrouped nodes [Payment1AndClaim1, AddressAndCustomerAndPolicy1]
+'''''''''''***************** Metadata 3 for Claim
+Identified by
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+ProperSubset for Claim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 3 for Customer
+Identified by
+[customertime]
+[customertime, policy]
+[customertime]
+[customertime, customer]
+Superset for Customer
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+Subset for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+ProperSubset for Customer
+[Customer, [policy], 2998, Policy, [policy], 2998]
+[Customer, [policy], 2998, Claim, [policy], 1542]
+[Customer, [customer], 2984, Address, [customer], 2984]
+Septet for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+Triplent for  Customer
+[Customer, Policy, false]
+Joins for Customer
+'''''''''''***************** Metadata 3 for Payment
+ProperSubset for Payment
+[Payment, [addresstime, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter, customer], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Policy, [pvar0], 3]
+[Payment, [claimcounter], 14, Policy, [pvar1], 8]
+[Payment, [address, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Claim, [claimcounter], 18]
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+[Payment, [claimnumber, claimcounter], 1665, Claim, [claimnumber, claimcounter], 3766]
+Septet for Payment
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 3 for Policy
+Identified by
+[policystarttime]
+[policystarttime, policy]
+[policystarttime]
+Superset for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for Policy
+[Policy, [policy], 2998, Customer, [policy], 2998]
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+Triplent for  Policy
+[Policy, Customer, false]
+Joins for Policy
+'''''''''''***************** Metadata 3 for Address
+Identified by
+[addresstime]
+[addresstime, customer]
+[addresstime]
+Superset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+Subset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+ProperSubset for Address
+[Address, [customer], 2984, Customer, [customer], 2984]
+Septet for Address
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+Triplent for  Address
+[Address, CustomerAndPolicy, false]
+Joins for Address
+'''''''''''***************** Metadata 3 for CustomerAndPolicy
+Identified by
+[policystarttime]
+Superset for CustomerAndPolicy
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for CustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  CustomerAndPolicy
+[CustomerAndPolicy, Address, false]
+Joins for CustomerAndPolicy
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 3 for Payment1
+Identified by
+[claimnumber]
+Subset for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Septet for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 3 for AddressAndCustomerAndPolicy
+Identified by
+[policystarttime]
+ProperSubset for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy
+[AddressAndCustomerAndPolicy, Payment1AndClaim, true]
+Joins for AddressAndCustomerAndPolicy
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 3 for Payment1AndClaim
+Identified by
+[claimnumber]
+ProperSubset for Payment1AndClaim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Payment1AndClaim
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim
+[Payment1AndClaim, AddressAndCustomerAndPolicy, true]
+Joins for Payment1AndClaim
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+'''''''''''***************** Metadata 3 for Payment1AndClaim1
+Identified by
+[policy]
+Subset for Payment1AndClaim1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim1
+[Payment1AndClaim, AddressAndCustomerAndPolicy, true]
+Joins for Payment1AndClaim1
+'''''''''''***************** Metadata 3 for AddressAndCustomerAndPolicy1
+Identified by
+[policy]
+Superset for AddressAndCustomerAndPolicy1
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy1
+Joins for AddressAndCustomerAndPolicy1
+getJoininTuple2 left and rightCustomer Policy
+getJoininTuple2 left and rightCustomer Address
+getJoininTuple2 left and rightAddress Customer
+getJoininTuple2 left and rightAddress Policy
+getJoininTuple2 left and rightAddress CustomerAndPolicy
+getJoininTuple2 left and rightPayment1 Claim
+getJoininTuple2 left and rightPayment1AndClaim1 AddressAndCustomerAndPolicy1
+*************JOIN on superset -subset  relation
+[Claim, [policy], 1542, Policy, [policy], 2998]
+LeftNode Payment1AndClaim1
+SEX Claim
+Sextet get values(3)Policy
+Right AddressAndCustomerAndPolicy1
+JoinTriplet {Policy=[Policy, Customer, false], Payment=[Payment, Claim, true], Payment1AndClaim=[Payment1AndClaim, AddressAndCustomerAndPolicy, true], Address=[Address, CustomerAndPolicy, false], Customer=[Customer, Policy, false], Payment1AndClaim1=[Payment1AndClaim, AddressAndCustomerAndPolicy, true], AddressAndCustomerAndPolicy=[AddressAndCustomerAndPolicy, Payment1AndClaim, true], Claim=[Claim, Payment1, false], Payment1=[Payment1, Claim, false], CustomerAndPolicy=[CustomerAndPolicy, Address, false]}
+Adding nodes
+Adding newly joined nodes [Payment1AndClaim1AndAddressAndCustomerAndPolicy1]
+'''''''''''***************** Metadata 4 for Claim
+Identified by
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+ProperSubset for Claim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 4 for Customer
+Identified by
+[customertime]
+[customertime, policy]
+[customertime]
+[customertime, customer]
+Superset for Customer
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+Subset for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+ProperSubset for Customer
+[Customer, [policy], 2998, Policy, [policy], 2998]
+[Customer, [policy], 2998, Claim, [policy], 1542]
+[Customer, [customer], 2984, Address, [customer], 2984]
+Septet for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+Triplent for  Customer
+[Customer, Policy, false]
+Joins for Customer
+'''''''''''***************** Metadata 4 for Payment
+ProperSubset for Payment
+[Payment, [addresstime, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter, customer], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Policy, [pvar0], 3]
+[Payment, [claimcounter], 14, Policy, [pvar1], 8]
+[Payment, [address, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Claim, [claimcounter], 18]
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+[Payment, [claimnumber, claimcounter], 1665, Claim, [claimnumber, claimcounter], 3766]
+Septet for Payment
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 4 for Policy
+Identified by
+[policystarttime]
+[policystarttime, policy]
+[policystarttime]
+Superset for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for Policy
+[Policy, [policy], 2998, Customer, [policy], 2998]
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+Triplent for  Policy
+[Policy, Customer, false]
+Joins for Policy
+'''''''''''***************** Metadata 4 for Address
+Identified by
+[addresstime]
+[addresstime, customer]
+[addresstime]
+Superset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+Subset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+ProperSubset for Address
+[Address, [customer], 2984, Customer, [customer], 2984]
+Septet for Address
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+Triplent for  Address
+[Address, CustomerAndPolicy, false]
+Joins for Address
+'''''''''''***************** Metadata 4 for CustomerAndPolicy
+Identified by
+[policystarttime]
+Superset for CustomerAndPolicy
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for CustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  CustomerAndPolicy
+[CustomerAndPolicy, Address, false]
+Joins for CustomerAndPolicy
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 4 for Payment1
+Identified by
+[claimnumber]
+Subset for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Septet for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 4 for AddressAndCustomerAndPolicy
+Identified by
+[policystarttime]
+ProperSubset for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy
+[AddressAndCustomerAndPolicy, Payment1AndClaim, true]
+Joins for AddressAndCustomerAndPolicy
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 4 for Payment1AndClaim
+Identified by
+[claimnumber]
+ProperSubset for Payment1AndClaim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Payment1AndClaim
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim
+[Payment1AndClaim, AddressAndCustomerAndPolicy, true]
+Joins for Payment1AndClaim
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+'''''''''''***************** Metadata 4 for Payment1AndClaim1
+Identified by
+[policy]
+Subset for Payment1AndClaim1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Septet for Payment1AndClaim1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim1
+[Payment1AndClaim1, AddressAndCustomerAndPolicy1, false]
+Joins for Payment1AndClaim1
+'''''''''''***************** Metadata 4 for AddressAndCustomerAndPolicy1
+Identified by
+[policy]
+Superset for AddressAndCustomerAndPolicy1
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy1
+[AddressAndCustomerAndPolicy1, Payment1AndClaim1, false]
+Joins for AddressAndCustomerAndPolicy1
+'''''''''''***************** Metadata 4 for Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+Identified by
+[policy]
+Triplent for  Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+Joins for Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+getJoininTuple2 left and rightCustomer Policy
+getJoininTuple2 left and rightCustomer Address
+getJoininTuple2 left and rightAddress Customer
+getJoininTuple2 left and rightAddress Policy
+getJoininTuple2 left and rightAddress CustomerAndPolicy
+Regroup contians multiple values
+Regroup2 contians multiple values
+getJoininTuple2 left and rightPayment1 Claim
+getJoininTuple2 left and rightPayment1AndClaim1 AddressAndCustomerAndPolicy1
+Adding nodes
+'''''''''''***************** Metadata 5 for Claim
+Identified by
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+ProperSubset for Claim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Claim
+[Claim, [claimnumber], 3848, Payment, [claimnumber], 1675]
+[Claim, [claimnumber, claimcounter], 3766, Payment, [claimnumber, claimcounter], 1665]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 5 for Customer
+Identified by
+[customertime]
+[customertime, policy]
+[customertime]
+[customertime, customer]
+Superset for Customer
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+Subset for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+[Customer, [customertime], 5029, Address, [addresstime], 5029]
+[Customer, [customertime, customer], 5032, Address, [addresstime, customer], 5032]
+ProperSubset for Customer
+[Customer, [policy], 2998, Policy, [policy], 2998]
+[Customer, [policy], 2998, Claim, [policy], 1542]
+[Customer, [customer], 2984, Address, [customer], 2984]
+Septet for Customer
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+[Customer, [customertime, policy], 5040, Policy, [policystarttime, policy], 6047]
+Triplent for  Customer
+[Customer, Policy, false]
+Joins for Customer
+'''''''''''***************** Metadata 5 for Payment
+ProperSubset for Payment
+[Payment, [addresstime, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter, customer], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Policy, [pvar0], 3]
+[Payment, [claimcounter], 14, Policy, [pvar1], 8]
+[Payment, [address, claimcounter], 14, Policy, [pvar0, pvar1], 10]
+[Payment, [claimcounter], 14, Claim, [claimcounter], 18]
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+[Payment, [claimnumber, claimcounter], 1665, Claim, [claimnumber, claimcounter], 3766]
+Septet for Payment
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 5 for Policy
+Identified by
+[policystarttime]
+[policystarttime, policy]
+[policystarttime]
+Superset for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for Policy
+[Policy, [policy], 2998, Customer, [policy], 2998]
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for Policy
+[Policy, [policystarttime], 6048, Customer, [customertime], 5029]
+[Policy, [policystarttime, policy], 6047, Customer, [customertime, policy], 5040]
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+Triplent for  Policy
+[Policy, Customer, false]
+Joins for Policy
+'''''''''''***************** Metadata 5 for Address
+Identified by
+[addresstime]
+[addresstime, customer]
+[addresstime]
+Superset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+Subset for Address
+[Address, [addresstime], 5029, Customer, [customertime], 5029]
+[Address, [addresstime, customer], 5032, Customer, [customertime, customer], 5032]
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+ProperSubset for Address
+[Address, [customer], 2984, Customer, [customer], 2984]
+Septet for Address
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+Triplent for  Address
+[Address, CustomerAndPolicy, false]
+Joins for Address
+'''''''''''***************** Metadata 5 for CustomerAndPolicy
+Identified by
+[policystarttime]
+Superset for CustomerAndPolicy
+[Policy, [policystarttime], 6048, Address, [addresstime], 5029]
+ProperSubset for CustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Triplent for  CustomerAndPolicy
+[CustomerAndPolicy, Address, false]
+Joins for CustomerAndPolicy
+[Customer, [customertime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 5 for Payment1
+Identified by
+[claimnumber]
+Subset for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Septet for Payment1
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 5 for AddressAndCustomerAndPolicy
+Identified by
+[policystarttime]
+ProperSubset for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+[Policy, [pvar0], 3, Claim, [claimcounter], 18]
+[Policy, [pvar1], 8, Claim, [claimcounter], 18]
+[Policy, [pvar0, pvar1], 10, Payment, [addresstime, claimcounter], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [claimcounter, customer], 14]
+[Policy, [pvar0, pvar1], 10, Payment, [address, claimcounter], 14]
+[Policy, [pvar0], 3, Payment, [claimcounter], 14]
+[Policy, [pvar1], 8, Payment, [claimcounter], 14]
+Septet for AddressAndCustomerAndPolicy
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy
+[AddressAndCustomerAndPolicy, Payment1AndClaim, true]
+Joins for AddressAndCustomerAndPolicy
+[Address, [addresstime], 5029, Policy, [policystarttime], 6048]
+'''''''''''***************** Metadata 5 for Payment1AndClaim
+Identified by
+[claimnumber]
+ProperSubset for Payment1AndClaim
+[Claim, [policy], 1542, Customer, [policy], 2998]
+[Claim, [claimcounter], 18, Policy, [pvar0], 3]
+[Claim, [claimcounter], 18, Policy, [pvar1], 8]
+[Claim, [policy], 1542, Policy, [policy], 2998]
+[Claim, [claimcounter], 18, Payment, [claimcounter], 14]
+Septet for Payment1AndClaim
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim
+[Payment1AndClaim, AddressAndCustomerAndPolicy, true]
+Joins for Payment1AndClaim
+[Payment, [claimnumber], 1675, Claim, [claimnumber], 3848]
+'''''''''''***************** Metadata 5 for Payment1AndClaim1
+Identified by
+[policy]
+Subset for Payment1AndClaim1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Septet for Payment1AndClaim1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+Triplent for  Payment1AndClaim1
+[Payment1AndClaim1, AddressAndCustomerAndPolicy1, false]
+Joins for Payment1AndClaim1
+'''''''''''***************** Metadata 5 for AddressAndCustomerAndPolicy1
+Identified by
+[policy]
+Superset for AddressAndCustomerAndPolicy1
+[Policy, [policy], 2998, Claim, [policy], 1542]
+Triplent for  AddressAndCustomerAndPolicy1
+[AddressAndCustomerAndPolicy1, Payment1AndClaim1, false]
+Joins for AddressAndCustomerAndPolicy1
+'''''''''''***************** Metadata 5 for Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+Identified by
+[policy]
+Triplent for  Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+Joins for Payment1AndClaim1AndAddressAndCustomerAndPolicy1
+[Claim, [policy], 1542, Policy, [policy], 2998]
+JoinTrippelt
+Policy
+[Policy, Customer, false]
+Payment
+[Payment, Claim, true]
+Payment1AndClaim
+[Payment1AndClaim, AddressAndCustomerAndPolicy, true]
+Address
+[Address, CustomerAndPolicy, false]
+Customer
+[Customer, Policy, false]
+Payment1AndClaim1
+[Payment1AndClaim1, AddressAndCustomerAndPolicy1, false]
+AddressAndCustomerAndPolicy
+[AddressAndCustomerAndPolicy, Payment1AndClaim, true]
+AddressAndCustomerAndPolicy1
+[AddressAndCustomerAndPolicy1, Payment1AndClaim1, false]
+Claim
+[Claim, Payment1, false]
+Payment1
+[Payment1, Claim, false]
+CustomerAndPolicy
+[CustomerAndPolicy, Address, false]

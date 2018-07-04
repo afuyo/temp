@@ -1,0 +1,645 @@
+'''''''''''***************** Metadata 1 for Claim
+Identified by
+[claimcounter, policy]
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+ProperSubset for Claim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Triplent for  Claim
+Joins for Claim
+'''''''''''***************** Metadata 1 for Customer
+Identified by
+[customer]
+[customer]
+Superset for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Customer
+Joins for Customer
+'''''''''''***************** Metadata 1 for Payment
+ProperSubset for Payment
+[Payment, [claimcounter], 1, Policy, [pvar0], 3]
+[Payment, [claimcounter], 1, Policy, [pvar1], 4]
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+[Payment, [claimcounter], 1, Claim, [claimcounter], 3]
+[Payment, [claimnumber], 2, Claim, [claimnumber], 5]
+Septet for Payment
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 1 for Policy
+ProperSubset for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+[Policy, [pvar0, policy], 4, Claim, [claimcounter, policy], 5]
+[Policy, [policy], 2, Claim, [policy], 2]
+[Policy, [pvar0], 3, Claim, [claimcounter], 3]
+[Policy, [pvar0], 3, Payment, [claimcounter], 1]
+[Policy, [pvar1], 4, Payment, [claimcounter], 1]
+[Policy, [customer], 1, Address, [customer], 1]
+Overlap for Policy
+[Policy, [pvar1, policy], 5, Claim, [claimcounter, policy], 5]
+[Policy, [pvar1], 4, Claim, [claimcounter], 3]
+Septet for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy
+[Policy, Customer, true]
+Joins for Policy
+'''''''''''***************** Metadata 1 for Address
+ProperSubset for Address
+[Address, [customer], 1, Customer, [customer], 7]
+[Address, [customer], 1, Policy, [customer], 1]
+Triplent for  Address
+Joins for Address
+'''''''''''***************** Metadata 1 for Payment1
+Identified by
+[claimnumber, claimcounter]
+Subset for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment1
+[Payment, Claim, true]
+Joins for Payment1
+'''''''''''***************** Metadata 1 for Policy1
+Identified by
+[customer]
+Subset for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy1
+[Policy, Customer, true]
+Joins for Policy1
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup contians multiple values
+getJoininTuple2 left and rightPayment1 Claim
+*************JOIN on superset -subset  relation
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+LeftNode Payment1
+SEX Payment
+Sextet get values(3)Claim
+Right Claim
+JoinTriplet {Policy=[Policy, Customer, true], Policy1=[Policy, Customer, true], Payment=[Payment, Claim, true], Payment1=[Payment, Claim, true]}
+getJoininTuple2 left and rightPolicy1 Claim
+getJoininTuple2 left and rightPolicy1 Customer
+*************JOIN on superset -subset  relation
+[Policy, [customer], 1, Customer, [customer], 7]
+LeftNode Policy1
+SEX Policy
+Sextet get values(3)Customer
+Right Customer
+JoinTriplet {Policy=[Policy, Customer, true], Policy1=[Policy, Customer, true], Payment=[Payment, Claim, true], Claim=[Claim, Payment1, false], Payment1=[Payment1, Claim, false]}
+Adding nodes
+Adding newly joined nodes [Payment1AndClaim, Policy1AndCustomer]
+'''''''''''***************** Metadata 2 for Claim
+Identified by
+[claimcounter, policy]
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+ProperSubset for Claim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Septet for Claim
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 2 for Customer
+Identified by
+[customer]
+[customer]
+Superset for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Septet for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+Triplent for  Customer
+[Customer, Policy1, false]
+Joins for Customer
+'''''''''''***************** Metadata 2 for Payment
+ProperSubset for Payment
+[Payment, [claimcounter], 1, Policy, [pvar0], 3]
+[Payment, [claimcounter], 1, Policy, [pvar1], 4]
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+[Payment, [claimcounter], 1, Claim, [claimcounter], 3]
+[Payment, [claimnumber], 2, Claim, [claimnumber], 5]
+Septet for Payment
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 2 for Policy
+ProperSubset for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+[Policy, [pvar0, policy], 4, Claim, [claimcounter, policy], 5]
+[Policy, [policy], 2, Claim, [policy], 2]
+[Policy, [pvar0], 3, Claim, [claimcounter], 3]
+[Policy, [pvar0], 3, Payment, [claimcounter], 1]
+[Policy, [pvar1], 4, Payment, [claimcounter], 1]
+[Policy, [customer], 1, Address, [customer], 1]
+Overlap for Policy
+[Policy, [pvar1, policy], 5, Claim, [claimcounter, policy], 5]
+[Policy, [pvar1], 4, Claim, [claimcounter], 3]
+Septet for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy
+[Policy, Customer, true]
+Joins for Policy
+'''''''''''***************** Metadata 2 for Address
+ProperSubset for Address
+[Address, [customer], 1, Customer, [customer], 7]
+[Address, [customer], 1, Policy, [customer], 1]
+Triplent for  Address
+Joins for Address
+'''''''''''***************** Metadata 2 for Payment1
+Identified by
+[claimnumber, claimcounter]
+Subset for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Septet for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 2 for Policy1
+Identified by
+[customer]
+Subset for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Septet for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy1
+[Policy1, Customer, false]
+Joins for Policy1
+'''''''''''***************** Metadata 2 for Payment1AndClaim
+Identified by
+[claimnumber, claimcounter]
+Superset for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+ProperSubset for Payment1AndClaim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Triplent for  Payment1AndClaim
+Joins for Payment1AndClaim
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+'''''''''''***************** Metadata 2 for Policy1AndCustomer
+Identified by
+[customer]
+Superset for Policy1AndCustomer
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Policy1AndCustomer
+Joins for Policy1AndCustomer
+[Policy, [customer], 1, Customer, [customer], 7]
+Policy1AndCustomer
+###########################
+Create new leftname Address1
+checkingMatchProperSubset Address rname Policy1AndCustomer
+getJoininTuple2 left and rightPayment1 Claim
+getJoininTuple2 left and rightPolicy1 Claim
+getJoininTuple2 left and rightPolicy1 Customer
+getJoininTuple2 left and rightPolicy1 Payment1AndClaim
+Adding nodes
+Adding regrouped nodes [Address1]
+'''''''''''***************** Metadata 3 for Claim
+Identified by
+[claimcounter, policy]
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+ProperSubset for Claim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Septet for Claim
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 3 for Customer
+Identified by
+[customer]
+[customer]
+Superset for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Septet for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+Triplent for  Customer
+[Customer, Policy1, false]
+Joins for Customer
+'''''''''''***************** Metadata 3 for Payment
+ProperSubset for Payment
+[Payment, [claimcounter], 1, Policy, [pvar0], 3]
+[Payment, [claimcounter], 1, Policy, [pvar1], 4]
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+[Payment, [claimcounter], 1, Claim, [claimcounter], 3]
+[Payment, [claimnumber], 2, Claim, [claimnumber], 5]
+Septet for Payment
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 3 for Policy
+ProperSubset for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+[Policy, [pvar0, policy], 4, Claim, [claimcounter, policy], 5]
+[Policy, [policy], 2, Claim, [policy], 2]
+[Policy, [pvar0], 3, Claim, [claimcounter], 3]
+[Policy, [pvar0], 3, Payment, [claimcounter], 1]
+[Policy, [pvar1], 4, Payment, [claimcounter], 1]
+[Policy, [customer], 1, Address, [customer], 1]
+Overlap for Policy
+[Policy, [pvar1, policy], 5, Claim, [claimcounter, policy], 5]
+[Policy, [pvar1], 4, Claim, [claimcounter], 3]
+Septet for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy
+[Policy, Customer, true]
+Joins for Policy
+'''''''''''***************** Metadata 3 for Address
+ProperSubset for Address
+[Address, [customer], 1, Customer, [customer], 7]
+[Address, [customer], 1, Policy, [customer], 1]
+Septet for Address
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address
+[Address, Policy1AndCustomer, true]
+Joins for Address
+'''''''''''***************** Metadata 3 for Payment1
+Identified by
+[claimnumber, claimcounter]
+Subset for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Septet for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 3 for Policy1
+Identified by
+[customer]
+Subset for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Septet for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy1
+[Policy1, Customer, false]
+Joins for Policy1
+'''''''''''***************** Metadata 3 for Payment1AndClaim
+Identified by
+[claimnumber, claimcounter]
+Superset for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+ProperSubset for Payment1AndClaim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Triplent for  Payment1AndClaim
+Joins for Payment1AndClaim
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+'''''''''''***************** Metadata 3 for Policy1AndCustomer
+Identified by
+[customer]
+Superset for Policy1AndCustomer
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Policy1AndCustomer
+Joins for Policy1AndCustomer
+[Policy, [customer], 1, Customer, [customer], 7]
+'''''''''''***************** Metadata 3 for Address1
+Identified by
+[customer]
+Subset for Address1
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address1
+[Address, Policy1AndCustomer, true]
+Joins for Address1
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+Regroup2 contians multiple values
+getJoininTuple2 left and rightPayment1 Claim
+getJoininTuple2 left and rightPolicy1 Claim
+getJoininTuple2 left and rightPolicy1 Customer
+getJoininTuple2 left and rightPolicy1 Payment1AndClaim
+getJoininTuple2 left and rightAddress1 Customer
+getJoininTuple2 left and rightAddress1 Policy1AndCustomer
+*************JOIN on superset -subset  relation
+[Address, [customer], 1, Customer, [customer], 7]
+LeftNode Address1
+SEX Address
+Sextet get values(3)Customer
+Right Policy1AndCustomer
+JoinTriplet {Policy=[Policy, Customer, true], Policy1=[Policy1, Customer, false], Payment=[Payment, Claim, true], Address=[Address, Policy1AndCustomer, true], Customer=[Customer, Policy1, false], Address1=[Address, Policy1AndCustomer, true], Claim=[Claim, Payment1, false], Payment1=[Payment1, Claim, false]}
+Adding nodes
+Adding newly joined nodes [Address1AndPolicy1AndCustomer]
+'''''''''''***************** Metadata 4 for Claim
+Identified by
+[claimcounter, policy]
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+ProperSubset for Claim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Septet for Claim
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 4 for Customer
+Identified by
+[customer]
+[customer]
+Superset for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Septet for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Customer
+[Customer, Policy1, false]
+Joins for Customer
+'''''''''''***************** Metadata 4 for Payment
+ProperSubset for Payment
+[Payment, [claimcounter], 1, Policy, [pvar0], 3]
+[Payment, [claimcounter], 1, Policy, [pvar1], 4]
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+[Payment, [claimcounter], 1, Claim, [claimcounter], 3]
+[Payment, [claimnumber], 2, Claim, [claimnumber], 5]
+Septet for Payment
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 4 for Policy
+ProperSubset for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+[Policy, [pvar0, policy], 4, Claim, [claimcounter, policy], 5]
+[Policy, [policy], 2, Claim, [policy], 2]
+[Policy, [pvar0], 3, Claim, [claimcounter], 3]
+[Policy, [pvar0], 3, Payment, [claimcounter], 1]
+[Policy, [pvar1], 4, Payment, [claimcounter], 1]
+[Policy, [customer], 1, Address, [customer], 1]
+Overlap for Policy
+[Policy, [pvar1, policy], 5, Claim, [claimcounter, policy], 5]
+[Policy, [pvar1], 4, Claim, [claimcounter], 3]
+Septet for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy
+[Policy, Customer, true]
+Joins for Policy
+'''''''''''***************** Metadata 4 for Address
+ProperSubset for Address
+[Address, [customer], 1, Customer, [customer], 7]
+[Address, [customer], 1, Policy, [customer], 1]
+Septet for Address
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address
+[Address, Policy1AndCustomer, true]
+Joins for Address
+'''''''''''***************** Metadata 4 for Payment1
+Identified by
+[claimnumber, claimcounter]
+Subset for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Septet for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 4 for Policy1
+Identified by
+[customer]
+Subset for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Septet for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy1
+[Policy1, Customer, false]
+Joins for Policy1
+'''''''''''***************** Metadata 4 for Payment1AndClaim
+Identified by
+[claimnumber, claimcounter]
+Superset for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+ProperSubset for Payment1AndClaim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Triplent for  Payment1AndClaim
+Joins for Payment1AndClaim
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+'''''''''''***************** Metadata 4 for Policy1AndCustomer
+Identified by
+[customer]
+Superset for Policy1AndCustomer
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Policy1AndCustomer
+[Policy1AndCustomer, Address1, false]
+Joins for Policy1AndCustomer
+[Policy, [customer], 1, Customer, [customer], 7]
+'''''''''''***************** Metadata 4 for Address1
+Identified by
+[customer]
+Subset for Address1
+[Address, [customer], 1, Customer, [customer], 7]
+Septet for Address1
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address1
+[Address1, Policy1AndCustomer, false]
+Joins for Address1
+'''''''''''***************** Metadata 4 for Address1AndPolicy1AndCustomer
+Identified by
+[customer]
+Triplent for  Address1AndPolicy1AndCustomer
+Joins for Address1AndPolicy1AndCustomer
+[Address, [customer], 1, Customer, [customer], 7]
+getJoininTuple2 left and rightPayment1 Claim
+getJoininTuple2 left and rightPolicy1 Claim
+getJoininTuple2 left and rightPolicy1 Customer
+getJoininTuple2 left and rightPolicy1 Payment1AndClaim
+getJoininTuple2 left and rightAddress1 Customer
+getJoininTuple2 left and rightAddress1 Policy1AndCustomer
+Adding nodes
+'''''''''''***************** Metadata 5 for Claim
+Identified by
+[claimcounter, policy]
+[claimnumber]
+[claimnumber, claimcounter]
+Superset for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+ProperSubset for Claim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Claim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Septet for Claim
+[Claim, [claimnumber], 5, Payment, [claimnumber], 2]
+[Claim, [claimnumber, claimcounter], 5, Payment, [claimnumber, claimcounter], 2]
+Triplent for  Claim
+[Claim, Payment1, false]
+Joins for Claim
+'''''''''''***************** Metadata 5 for Customer
+Identified by
+[customer]
+[customer]
+Superset for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Septet for Customer
+[Customer, [customer], 7, Policy, [customer], 1]
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Customer
+[Customer, Policy1, false]
+Joins for Customer
+'''''''''''***************** Metadata 5 for Payment
+ProperSubset for Payment
+[Payment, [claimcounter], 1, Policy, [pvar0], 3]
+[Payment, [claimcounter], 1, Policy, [pvar1], 4]
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+[Payment, [claimcounter], 1, Claim, [claimcounter], 3]
+[Payment, [claimnumber], 2, Claim, [claimnumber], 5]
+Septet for Payment
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment
+[Payment, Claim, true]
+Joins for Payment
+'''''''''''***************** Metadata 5 for Policy
+ProperSubset for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+[Policy, [pvar0, policy], 4, Claim, [claimcounter, policy], 5]
+[Policy, [policy], 2, Claim, [policy], 2]
+[Policy, [pvar0], 3, Claim, [claimcounter], 3]
+[Policy, [pvar0], 3, Payment, [claimcounter], 1]
+[Policy, [pvar1], 4, Payment, [claimcounter], 1]
+[Policy, [customer], 1, Address, [customer], 1]
+Overlap for Policy
+[Policy, [pvar1, policy], 5, Claim, [claimcounter, policy], 5]
+[Policy, [pvar1], 4, Claim, [claimcounter], 3]
+Septet for Policy
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy
+[Policy, Customer, true]
+Joins for Policy
+'''''''''''***************** Metadata 5 for Address
+ProperSubset for Address
+[Address, [customer], 1, Customer, [customer], 7]
+[Address, [customer], 1, Policy, [customer], 1]
+Septet for Address
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address
+[Address, Policy1AndCustomer, true]
+Joins for Address
+'''''''''''***************** Metadata 5 for Payment1
+Identified by
+[claimnumber, claimcounter]
+Subset for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Septet for Payment1
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+Triplent for  Payment1
+[Payment1, Claim, false]
+Joins for Payment1
+'''''''''''***************** Metadata 5 for Policy1
+Identified by
+[customer]
+Subset for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Septet for Policy1
+[Policy, [customer], 1, Customer, [customer], 7]
+Triplent for  Policy1
+[Policy1, Customer, false]
+Joins for Policy1
+'''''''''''***************** Metadata 5 for Payment1AndClaim
+Identified by
+[claimnumber, claimcounter]
+Superset for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar0, policy], 4]
+ProperSubset for Payment1AndClaim
+[Claim, [claimcounter], 3, Policy, [pvar0], 3]
+[Claim, [policy], 2, Policy, [policy], 2]
+[Claim, [claimcounter], 3, Payment, [claimcounter], 1]
+Overlap for Payment1AndClaim
+[Claim, [claimcounter, policy], 5, Policy, [pvar1, policy], 5]
+[Claim, [claimcounter], 3, Policy, [pvar1], 4]
+Triplent for  Payment1AndClaim
+Joins for Payment1AndClaim
+[Payment, [claimnumber, claimcounter], 2, Claim, [claimnumber, claimcounter], 5]
+'''''''''''***************** Metadata 5 for Policy1AndCustomer
+Identified by
+[customer]
+Superset for Policy1AndCustomer
+[Customer, [customer], 7, Address, [customer], 1]
+Triplent for  Policy1AndCustomer
+[Policy1AndCustomer, Address1, false]
+Joins for Policy1AndCustomer
+[Policy, [customer], 1, Customer, [customer], 7]
+'''''''''''***************** Metadata 5 for Address1
+Identified by
+[customer]
+Subset for Address1
+[Address, [customer], 1, Customer, [customer], 7]
+Septet for Address1
+[Address, [customer], 1, Customer, [customer], 7]
+Triplent for  Address1
+[Address1, Policy1AndCustomer, false]
+Joins for Address1
+'''''''''''***************** Metadata 5 for Address1AndPolicy1AndCustomer
+Identified by
+[customer]
+Triplent for  Address1AndPolicy1AndCustomer
+Joins for Address1AndPolicy1AndCustomer
+[Address, [customer], 1, Customer, [customer], 7]
