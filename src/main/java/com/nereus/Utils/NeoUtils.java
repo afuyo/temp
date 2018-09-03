@@ -328,6 +328,86 @@ public class NeoUtils {
         driver.close();
 
     }
+    public static void writeToNeo4  ()
+    {
+        //createAvroSchemas(schemas);
+        //Driver driver = GraphDatabase.driver(
+        //      "bolt+routing://10.84.4.12:7687", AuthTokens.basic("neo4j", ""));
+        // Driver driver = GraphDatabase.driver("bolt://10.84.4.10:7687",
+        //     AuthTokens.basic("neo4j", "blockchain"));
+        Driver driver = GraphDatabase.driver(
+                "bolt://localhost:7687", AuthTokens.basic("neo4j", "wat#rMel0n"));
+        Session session = driver.session();
+        session.run("MATCH(n) detach delete n");
+        Map<String, Object> params = new HashMap<>();
+        Iterator<String> iter = NODES.iterator();
+        while (iter.hasNext()){
+            String e = iter.next();
+
+            params.put("id", e);
+            params.put("outputLabel", e);
+            params.put("objectName",e);
+            params.put("joinStart", getJoinStart2(e));
+            params.put("joinEnd",getJoinEnd2(e));
+            params.put("streamStart",getStreamStart2(e));
+            params.put("streamEnd",getStreamEnd(e));
+            params.put("keyName",getKey(e));
+            params.put("leftSource",getLeftKey(e));
+            params.put("rightSource",getRightKey(e));
+            if(!iter.hasNext())
+            {params.put("finalOutput","TRUE");}
+            else {params.put("finalOutput","");}
+            //params.put("schema",getSchema(e));
+            params.put("schema",null);
+
+
+            session.run("CREATE (a:Table {id:$id, outputLabel:$outputLabel,joinStart:$joinStart,joinEnd:$joinEnd,streamStart:$streamStart,streamEnd:$streamEnd,keyName:$keyName,"+
+                    "leftSource:$leftSource,rightSource:$rightSource,finalOutput:$finalOutput,schema:$schema,objectName:$objectName}) RETURN a ", params);
+
+        }
+
+        session.run("MATCH (p1:Table)" + "MATCH (p2:Table) where p1.objectName= p2.joinStart OR p1.objectName= p2.joinEnd merge (p1)-[:Join]->(p2)return p1,p2");
+        session.run("MATCH (st:Table)\n" +
+                "MATCH (est:Table) where st.objectName = est.streamStart\n" +
+                "MERGE (st)-[:GROUPBY]->(est);");
+        params.clear();
+        STREAMNODES.forEach((e)->{
+            // Map<String, Object> params = new HashMap<>();
+
+            params.put("id", e);
+            params.put("outputLabel", e);
+            params.put("streamStart", null);
+            params.put("streamEnd",null);
+            params.put("topicName",streamTableMapping.get(e));
+
+            session.run("CREATE(b:Stream{id:$id,outputLabel:$outputLabel,streamStart:$streamStart,streamEnd:$streamEnd,topicName:$topicName}) RETURN b",params);
+
+        });
+
+        // session.run("MATCH(a:Stream), (b:Table) where a.name=b.streamStart create (a)-[r:GROUPBY]->(b)");
+
+        session.run("MATCH(st:Stream) MATCH(est) where st.outputLabel=est.streamStart MERGE(st)-[:GROUPBY]->(est)");
+        //session.run("MATCH(st:Stream) MATCH(tbl:Table) where st.outputLabel=tbl.objectName MERGE(st)-[:GROUPBY]->(est)");
+
+        // session.run("CREATE (baeldung:Company {name:\"Baeldung\"}) " +
+        //       "-[:owns]-> (tesla:Car {make: 'tesla', model: 'modelX'})" +
+        //      "RETURN baeldung, tesla");
+
+        /***Manual update */
+        session.run("MATCH(n{objectName:'STATPEJ.POC_ADDRESS2'}) set n.keyName='[[ADDRESSTIME]]'");
+        session.run("MATCH(n{objectName:'STATPEJ.POC_CUSTOMER2'}) set n.keyName='[[CUSTOMERTIME]]'");
+        session.run("MATCH(n{objectName:'STATPEJ.POC_POLICY2'}) set n.keyName='[[POLICYSTARTTIME]]'");
+        session.run("MATCH(n{objectName:'STATPEJ.POC_CLAIM2'}) set n.keyName='[[CLAIMCOUNTER, CLAIMNUMBER]]'");
+        //local
+        session.run("MATCH(n{objectName:'Address'}) set n.keyName='[[addresstime]]'");
+        session.run("MATCH(n{objectName:'Customer'}) set n.keyName='[[customertime]]'");
+        session.run("MATCH(n{objectName:'Policy'}) set n.keyName='[[policystarttime]]'");
+        session.run("MATCH(n{objectName:'Claim'}) set n.keyName='[[claimcounter, claimnumber]]'");
+        //TODO
+        session.close();
+        driver.close();
+
+    }
 
     public static void createAvroSchemas(HashMap<String,String> schemas){
         SOURCE_NODES.forEach((e)->

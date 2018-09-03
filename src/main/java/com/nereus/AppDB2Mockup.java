@@ -65,134 +65,7 @@ public class AppDB2Mockup {
         HashMap<String,String> setsTable = new HashMap();
         MetadataService.hardCodeBusinessKeysAvro();
         MetadataService.hardCodeForeignKeysAvro();
-
-
-
-        //SetInfo.paymentLines=i;
-
-      //  HashMap<Set<String>,HLL> custCardinalities= new HashMap<>();
-       // HashMap<Set<String>,HLL> polCardinalities  = new HashMap<>();
-       // HashMap<Set<String>,HLL> claimCardinalities = new HashMap<>();
-     //   HashMap<Set<String>,HLL> payCardinalities = new HashMap<>();
-        //HashMap<Set<String>,HLL> addressCardinalities = new HashMap<>();
-
-
-        HashMap<String,HashMap<Set<String>,HLL>> custCardinalities2= new HashMap<>();
-        HashMap<String,HashMap<Set<String>,HLL>> polCardinalities2= new HashMap<>();
-        HashMap<String,HashMap<Set<String>,HLL>> claimCardinalities2= new HashMap<>();
-        HashMap<String,HashMap<Set<String>,HLL>> payCardinalities2= new HashMap<>();
-        HashMap<String,HashMap<Set<String>,HLL>> addressCardinalities2= new HashMap<>();
-        HashMap<String,HashMap<Set<String>,HLL>> claimHandlerCardinalities2= new HashMap<>();
-
-
-
-        custCardinalities2.put(CUSTOMER_TOPIC,new HashMap<>());
-        polCardinalities2.put(POLICY_TOPIC,new HashMap<>());
-      //  claimCardinalities2.put(CLAIM_TOPIC,new HashMap<>());
-      //  payCardinalities2.put(PAYMENT_TOPIC,new HashMap());
-      //  addressCardinalities2.put(ADDRESS_TOPIC,new HashMap<>());
-      //  claimHandlerCardinalities2.put(CLAIMHANDLER_TOPIC,new HashMap<>());
-
-
-
-               //Collection of HLLs
-
-
-        ArrayList <HashMap<String,HashMap<Set<String>,HLL>>> hllCollection = new ArrayList<>();
-        hllCollection.add(custCardinalities2);
-        hllCollection.add(polCardinalities2);
-        hllCollection.add(claimCardinalities2);
-        hllCollection.add(payCardinalities2);
-        hllCollection.add(addressCardinalities2);
-
-        //findCommonKeys(custCardinalities,polCardinalities);
-        // findCommonKeys(claimCardinalities,payCardinalities);
-        //findCommonKeys(polCardinalities,claimCardinalities);
-      //  HashMap<String,Object> hashMap= PopulateSampledData.populateHLLObjects("STATPEJ.POC_CLAIM2,STATPEJ.POC_CLAIMPAYMENT2,STATPEJ.POC_CUSTOMER2,STATPEJ.POC_POLICY2,STATPEJ.POC_ADDRESS2", KAFKA_GROUP_ID,50000);
-      // HashMap<String,Object> hashMap= PopulateSampledData.populateHLLObjects("STATPEJ.POC_CLAIM5,STATPEJ.POC_CLAIMPAYMENT5,STATPEJ.POC_CUSTOMER5,STATPEJ.POC_POLICY5,STATPEJ.POC_ADDRESS5,STATPEJ.POC_CLAIMHANDLER5", KAFKA_GROUP_ID,50000);
-     //   HashMap<String,Object> hashMap= PopulateSampledData.populateHLLObjects(CLAIM_TOPIC+","+PAYMENT_TOPIC+","+CUSTOMER_TOPIC+","+POLICY_TOPIC+","+ADDRESS_TOPIC+","+CLAIMHANDLER_TOPIC,KAFKA_GROUP_ID,50000);
-        HashMap<String,Object> hashMap= PopulateSampledData.populateHLLObjects(CUSTOMER_TOPIC+","+POLICY_TOPIC,KAFKA_GROUP_ID,5000);
-
-        //HashMap<String,Object> hashMap = PopulateSampledData.regenerateHLLObjects("CLAIMNUMBER","_","STATPEJ.POC_CLAIM3,STATPEJ.POC_CLAIMPAYMENT3,STATPEJ.POC_CUSTOMER3,STATPEJ.POC_POLICY3,STATPEJ.POC_ADDRESS3","STATPEJ.POC_CLAIM3",KAFKA_GROUP_ID,50000,"POLICY");
-        // Schema schema= SchemaGeneratorUtils.generateJoinedSchema("Customer","Customer","Policy","Policy");
-        // System.out.println("Schema "+schema.toString());
-
-       // System.out.println(regenerateHLLObjects("CLAIMNUMBER", "_", sourceTopicList,
-//				"STATPEJ.POC_CLAIM3,STATPEJ.POC_CLAIMPAYMENT3", consumerGroupId, targetTotalCount, "POLICY"));
-        @SuppressWarnings("unchecked")
-        HashMap<String,String> schemas = (HashMap<String,String>)hashMap.get("schemaCollection");
-         @SuppressWarnings("unchecked")
-         ArrayList<HashMap<String, HashMap<Set<String>, HLL>>> hllCollection2 = (ArrayList<HashMap<String, HashMap<Set<String>, HLL>>> ) hashMap.get("hllCollection");
-
-         hllCollection2.forEach((a) -> {
-
-         Set<String> setAName = a.keySet();
-         System.out.println("KeySet2 " + a.values().toString());
-         a.forEach((k,v)->{
-             System.out.println("_______??????????????????????CLAIM_TOPIC");
-             System.out.println(k);
-             v.forEach((k1,v1)->{
-                 System.out.println(k1);
-                 System.out.println(v1.cardinality());
-             });
-         });
-         });
-        @SuppressWarnings("unchecked")
-        HashMap<String, Long> dataCountMap =
-                (HashMap<String, Long> )hashMap.get("dataCountCollection");
-        //"STATPEJ.POC_CLAIM","STATPEJ.POC_CLAIMPAYMENT","STATPEJ.POC_CUSTOMER","STATPEJ.POC_POLICY"
-
-        System.out.println("################HASHMAP");
-        System.out.println(hashMap);
-
-       // SetInfo.claimLines=dataCountMap.get(CLAIM_TOPIC).intValue();
-        SetInfo.customerLines=dataCountMap.get(CUSTOMER_TOPIC).intValue();
-         SetInfo.policyLines=dataCountMap.get(POLICY_TOPIC).intValue();
-        //SetInfo.paymentLines=dataCountMap.get(PAYMENT_TOPIC).intValue();
-        //SetInfo.addressLines=dataCountMap.get(ADDRESS_TOPIC).intValue();
-        //SetInfo.claimHandlerLines=dataCountMap.get(CLAIMHANDLER_TOPIC).intValue();
-
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-        System.out.println(SetInfo.customerLines+" Customer Lines");
-        System.out.println(SetInfo.policyLines+" Policy Lines");
-        System.out.println(SetInfo.claimLines+" Claim Lines");
-        System.out.println(SetInfo.paymentLines+" Payment lines");
-        System.out.println(SetInfo.addressLines+" Address lines");
-        System.out.println(SetInfo.claimLines+" ClaimHandlerLines ");
-
-        hllCollection2.forEach((a) -> {
-
-            Set<String> setAName = a.keySet();
-            System.out.println("KeySet "+a.values().toString());
-            hllCollection2.forEach((b)->{
-                if (b.equals(a)){
-
-                    //a.keySet()
-                    //System.out.println("Equals");
-                    //System.out.println(a.keySet());
-                    //System.out.println(b.keySet());
-                }
-                else {
-                    Set<String> setBName = b.keySet();
-                    //System.out.println("Not Equals");
-                    // System.out.println(a.keySet());
-                    //System.out.println(b.keySet());
-                    try {
-                        // findCommonKeys2(a, b,setsTable);
-                       // findCommonKeys3(a, b,setAName,setBName);
-                        Builder.fit(a, b,setAName,setBName);
-
-                    } //catch( CloneNotSupportedException e)
-                    catch(Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-
-                }
-
-
-            });
-        });
+      //  HashMap<String,String> schemas = DAO.getSchemas();
 
         MockUp.clearSets();
         MockUp.printSets();
@@ -224,7 +97,7 @@ public class AppDB2Mockup {
         //NeoUtils.writeToCSV();
         //NeoUtils.writeToNeo(schemas);
         //NeoUtils.writeToNeo2();
-        NeoUtils.writeToNeo3(schemas);
+       // NeoUtils.writeToNeo3(schemas);
        // NeoUtils.writeToNeo();
 
        /** System.out.println("TempRegrouped "+(tempRegrouped.hashCode()));
